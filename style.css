@@ -99,3 +99,18 @@ input,textarea,.btn{min-width:0;max-width:100%}.btn{white-space:nowrap}
 @media print{.pg{zoom:1!important}}
 
 .sunsvg{pointer-events:none}.dhero>:not(.sunsvg){position:relative}.hero>:not(.sunsvg):not(.meta){position:relative}
+
+/* v8: PDF ocupa melhor a página e rodapé acima da margem de impressão */
+.pg{display:flex;flex-direction:column}
+.pg>.in{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:space-between;padding-bottom:96px}
+.pg>.in.e{justify-content:flex-start;padding-bottom:24px}
+.in.e .sign{margin-top:auto;margin-bottom:48px}
+.pg>.fill{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:26px 0 96px}
+.fill .kps,.fill .navybox{margin:0}
+.foot{bottom:12mm}
+.cta{position:static;margin:0 0 96px}
+.pg .kp{padding:18px}.pg .kp b{font-size:22px}
+.pg .kv{padding:9px 0;font-size:12.5px}
+.pg .navybox{padding:28px}.pg .navybox h3{font-size:20px}.pg .navybox p{font-size:13px}
+.pg td{padding:12px 6px}.pg .gar div{padding:16px}.pg .steps div{padding:16px;font-size:11.5px}.pg .scope{font-size:12.5px;gap:10px 24px}
+.proj img{height:176px}
